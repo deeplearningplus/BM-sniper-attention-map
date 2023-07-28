@@ -1,0 +1,57 @@
+<!html>
+<html>
+
+<script src="./openseadragon.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script> -->
+
+<div class="description">
+</div>
+
+<div class="demoarea">
+    <div id="example-2row-tilesource-collection" 
+         class="openseadragon" >
+    </div>
+</div>
+
+<script type="text/javascript">
+    var viewer = OpenSeadragon({
+        id:                 "example-2row-tilesource-collection",
+        prefixUrl:          "./button_images/",
+        debugMode:          false, //if you want to see the render grid
+        
+        collectionMode:     true,
+        collectionRows:     1, 
+        collectionTileSize: 1024,
+        collectionTileMargin: 12,
+
+
+        //collectionLayout:   'vertical',
+        //panVertical:        false,
+        //panHorizontal:      false,
+        //defaultZoomLevel:   1,
+
+        /*The wrap options can be fun to give a sense of infinite results*/
+        //wrapHorizontal: true,
+        //wrapVertical: true,
+        
+        /*Tile sources can be mixed*/
+        tileSources: [
+            "./example-images/meta_new12/slide.dzi",
+            "./example-images/meta_new15/slide.dzi",
+            "./example-images/meta_new16/slide.dzi",
+            "./example-images/meta_new18/slide.dzi",
+            "./example-images/meta_new5/slide.dzi",
+            "./example-images/nometa_new16/slide.dzi",
+            "./example-images/nometa_new23/slide.dzi",
+            "./example-images/nometa_new30/slide.dzi",
+            "./example-images/nometa_new38/slide.dzi",
+            "./example-images/nometa_new48/slide.dzi"
+        ]
+    });
+</script>
+
+
+</body>
+</html>
+
+
